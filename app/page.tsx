@@ -12,7 +12,7 @@ const products = [
     id: 1,
     name: "Vermi Compost 🌱",
     price: "EGP 239.00",
-    image: "/images/products/product-1.png",
+    image: "images/products/product-1.png",
     description: "Supercharge your garden with our premium organic compost!",
   },
   {
