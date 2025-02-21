@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <Image src="/images/logo/eco-logo.png" alt="2nd Cycle" width={80} height={80} className="w-20 h-20" />
+            <Image src="images/logo/eco-logo.png" alt="2nd Cycle" width={80} height={80} className="w-20 h-20" />
             <p className="text-gray-600">Turning trash into treasure, one cycle at a time! 🌍♻️</p>
           </div>
           <div>
