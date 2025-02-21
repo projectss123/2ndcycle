@@ -11,7 +11,7 @@ const teamMembers = [
     name: "Yara Yasser",
     role: "Founder & CEO",
     bio: "Passionate about sustainability and technology",
-    image: "/images/team/team-yara-yasser.png",
+    image: "images/team/team-yara-yasser.png",
     social: {
       twitter: "#",
       linkedin: "#",
@@ -22,7 +22,7 @@ const teamMembers = [
     name: "Fatma Bakr",
     role: "CFO",
     bio: "Building products that make a difference",
-    image: "/images/team/team-fatma-bakr.png",
+    image: "images/team/team-fatma-bakr.png",
     social: {
       twitter: "#",
       linkedin: "#",
@@ -33,7 +33,7 @@ const teamMembers = [
     name: "Hisham Khaled",
     role: "Operations Manager",
     bio: "Turning ideas into reality through code",
-    image: "/images/team/team-hisham-khaled.png",
+    image: "images/team/team-hisham-khaled.png",
     social: {
       twitter: "#",
       linkedin: "#",
@@ -44,7 +44,7 @@ const teamMembers = [
     name: "Hania Hatem",
     role: "HR Manager",
     bio: "Creating impactful stories that inspire change",
-    image: "/images/team/team-hania-hatem.png",
+    image: "images/team/team-hania-hatem.png",
     social: {
       twitter: "#",
       linkedin: "#",
@@ -55,7 +55,7 @@ const teamMembers = [
     name: "Malak Hatem",
     role: "Marketing Manager",
     bio: "Making eco-friendly choices accessible to all",
-    image: "/images/team/team-malak-hatem.png",
+    image: "images/team/team-malak-hatem.png",
     social: {
       twitter: "#",
       linkedin: "#",
@@ -106,7 +106,7 @@ export default function TeamPage() {
                 <GradientCard>
                   <div className="relative group">
                     <Image
-                      src={`/images/team/team-${member.name.toLowerCase().replace(" ", "-")}.png`}
+                      src={`images/team/team-${member.name.toLowerCase().replace(" ", "-")}.png`}
                       alt={member.name}
                       width={400}
                       height={400}
