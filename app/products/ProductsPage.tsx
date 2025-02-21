@@ -205,7 +205,7 @@ export default function ProductsPage() {
                     <div className="space-y-2">
                       <GradientButton
                         variant={selectedCategory === "all" ? "default" : "outline"}
-                        className="w-full justify-start"
+                        className="w-full justify-start text-white"
                         onClick={() => setSelectedCategory("all")}
                       >
                         All Products
@@ -214,7 +214,7 @@ export default function ProductsPage() {
                         <GradientButton
                           key={category.id}
                           variant={selectedCategory === category.id ? "default" : "outline"}
-                          className="w-full justify-start"
+                          className="w-full justify-start text-white"
                           onClick={() => setSelectedCategory(category.id)}
                         >
                           {category.name}
