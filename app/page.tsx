@@ -19,14 +19,14 @@ const products = [
     id: 2,
     name: "Potting Soil 🪴",
     price: "EGP 99.00",
-    image: "/images/products/product-2.png",
+    image: "images/products/product-2.png",
     description: "Trendy pots made from 100% recycled materials. Plants love 'em!",
   },
   {
     id: 3,
     name: "Organic Compost 🌱",
     price: "EGP 149.00",
-    image: "/images/products/product-3.png",
+    image: "images/products/product-3.png",
     description: "The secret sauce for lush, Insta-worthy plants!",
   },
 ]
@@ -71,7 +71,7 @@ export default function Home() {
           {/* Hero Section */}
           <section className="relative min-h-screen flex items-center overflow-hidden">
             <Image
-              src="/images/hero/hero-background.jpg"
+              src="images/hero/hero-background.jpg"
               alt="Eco-friendly background"
               fill
               className="object-cover object-center opacity-80"
@@ -104,7 +104,7 @@ export default function Home() {
                     className="w-[180px] h-[60px] relative overflow-hidden rounded-xl transform transition-transform hover:scale-105"
                   >
                     <Image
-                      src="/images/app-store-badge.png"
+                      src="images/app-store-badge.png"
                       alt="Download on App Store"
                       fill
                       className="object-cover"
@@ -116,7 +116,7 @@ export default function Home() {
                     className="w-[200px] h-[60px] relative overflow-hidden rounded-xl transform transition-transform hover:scale-105"
                   >
                     <Image
-                      src="/images/google-play-badge.png"
+                      src="images/google-play-badge.png"
                       alt="Get it on Google Play"
                       fill
                       className="object-cover"
@@ -131,7 +131,7 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
               >
                 <Image
-                  src="/images/logo/eco-logo-large.png"
+                  src="images/logo/eco-logo-large.png"
                   alt="2nd Cycle Logo"
                   width={400}
                   height={400}
@@ -276,7 +276,7 @@ export default function Home() {
                     className="w-[200px] h-[60px] relative overflow-hidden rounded-xl transform transition-transform hover:scale-105"
                   >
                     <Image
-                      src="/images/app-store-badge.png"
+                      src="images/app-store-badge.png"
                       alt="Download on App Store"
                       fill
                       className="object-cover"
@@ -290,7 +290,7 @@ export default function Home() {
                     className="w-[220px] h-[60px] relative overflow-hidden rounded-xl transform transition-transform hover:scale-105"
                   >
                     <Image
-                      src="/images/google-play-badge.png"
+                      src="images/google-play-badge.png"
                       alt="Get it on Google Play"
                       fill
                       className="object-cover"
