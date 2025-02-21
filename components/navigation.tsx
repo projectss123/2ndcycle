@@ -22,7 +22,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center gap-2">
             <motion.div whileHover={{ rotate: 360, scale: 1.2 }} transition={{ duration: 0.5 }}>
               <Image
-                src="/images/logo/eco-logo.png"
+                src="images/logo/eco-logo.png"
                 alt="2nd Cycle"
                 width={60}
                 height={60}
