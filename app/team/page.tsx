@@ -124,7 +124,25 @@ export default function TeamPage() {
           </div>
         </div>
       </section>
-
+      {/* Join Us Section */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-apple-green/10 via-mint/10 to-white" />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl font-bold mb-6 gradient-text">Join Our Force</h2>
+            <p className="text-xl max-w-2xl mx-auto mb-8 text-gray-700">
+              We're always looking for passionate individuals who want to make a difference. Check out our open
+              positions and become part of our mission.
+            </p>
+            <GradientButton>View Open Positions</GradientButton>
+          </motion.div>
+        </div>
+      </section>
       
     </div>
   )
