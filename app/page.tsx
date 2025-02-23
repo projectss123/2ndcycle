@@ -2,7 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { Leaf, RefreshCcw, Users } from "lucide-react"
+import { Leaf, RefreshCcw, Users, Box, ShoppingBag, Truck, Recycle, ShoppingCart } from "lucide-react"
 import { motion } from "framer-motion"
 import { useState } from "react"
 import { GradientButton } from "@/components/ui/gradient-button"
@@ -64,6 +64,34 @@ export default function Home() {
     }
   }
 
+  const operationSteps = [
+    {
+      icon: Box,
+      title: "Step 1: Eco-Friendly Containers",
+      description: "Each apartment receives a plastic box and silicone bags for waste collection.",
+    },
+    {
+      icon: ShoppingBag,
+      title: "Step 2: Collect Your Waste",
+      description: "Use our silicone bags to store your leftovers and food waste.",
+    },
+    {
+      icon: Truck,
+      title: "Step 3: On-Demand Pickup",
+      description: "Our 2nd Cycle vehicle collects your leftovers whenever you request it.",
+    },
+    {
+      icon: Recycle,
+      title: "Step 4: Conversion Process",
+      description: "We convert your collected waste into nutrient-rich organic soil.",
+    },
+    {
+      icon: ShoppingCart,
+      title: "Step 5: Shop Organic Products",
+      description: "Purchase our organic soil products through our application.",
+    },
+  ]
+  
   return (
     <div>
       <main>
@@ -177,6 +205,33 @@ export default function Home() {
                     </p>
                   </div>
                 )}
+              </div>
+            </div>
+          </section>
+
+          {/* How We Operate Section */}
+          <section className="py-24 bg-white">
+            <div className="container mx-auto px-4">
+              <h2 className="text-4xl font-bold mb-12 text-center gradient-text">How We Operate</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                {operationSteps.map((step, index) => (
+                  <motion.div
+                    key={step.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                  >
+                    <Card className="h-full hover:shadow-lg transition-shadow">
+                      <CardContent className="p-6 flex flex-col items-center text-center">
+                        <div className="mb-4 p-3 bg-apple-green rounded-full">
+                          <step.icon className="w-8 h-8 text-white" />
+                        </div>
+                        <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
+                        <p className="text-gray-600">{step.description}</p>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </section>
