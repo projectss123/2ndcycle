@@ -11,6 +11,20 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "2nd Cycle - Turn Trash to Treasure! 🌱♻️",
   description: "Join the eco-revolution with 2nd Cycle - where sustainability meets style!",
+  icons: {
+    icon: [
+      {
+        url: "images/logo/eco-logo.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+    ],
+    apple: {
+      url: "images/logo/eco-logo.png",
+      sizes: "180x180",
+      type: "image/png",
+    },
+  },
 }
 
 export default function RootLayout({
